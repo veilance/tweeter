@@ -1,0 +1,35 @@
+main section.new-tweet {
+    border: 1px;
+    border: solid;
+    margin: 0 2em;
+    padding: 0 2% 2%;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: lightgrey;
+}
+
+main section h2 {
+    text-align: left;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+main section form span.counter {
+    float: right;
+}
+
+main section form textarea {
+    width: 100%;
+    padding: 1% 2%;
+}
+
+/* <main class="container">
+<section class="new-tweet">
+  <h2>Compose Tweet</h2>
+  <form method="POST" action="/tweets/">
+    <textarea name="text" placeholder="What are you humming about?"></textarea>
+    <input type="submit" value="Tweet">
+    <span class="counter">140</span>
+  </form>
+</section>
+</main> */
