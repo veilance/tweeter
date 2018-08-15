@@ -5,6 +5,7 @@
  */
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -19,11 +20,12 @@ body {
   color: #244751;
   background-color: lightgrey;
   font-family: "Roboto Condensed", sans-serif;
+  height: 100%;
 }
 
 main {
   width: 450px;
-  height: 100vh;
+  height: 100%;
   background-color: white;
   margin: 0 auto;
   padding-top: 140px;

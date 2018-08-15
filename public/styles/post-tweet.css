@@ -13,6 +13,7 @@ article.tweet header {
     align-items: center;
     justify-content: space-around;
     box-sizing: border-box;
+    background-color: #F0F0F0;
 }
 
 article.tweet header img {
@@ -38,4 +39,17 @@ article.tweet footer {
     padding: 2%;
     border-top: 1px solid;
     border-color: gainsboro;
+    display: flex;
+    align-items: center;
 }
+
+article.tweet footer p{
+    flex-grow: 5;
+}
+
+article.tweet footer div.icons {
+    display: none;
+    justify-content: space-between;
+}
+
+

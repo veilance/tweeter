@@ -20,8 +20,12 @@
   <!-- Tweet CSS -->
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-   <!-- -Post-Tweet CSS -->
-   <link rel="stylesheet" href="/styles/post-tweet.css" type="text/css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+
+  <!-- -Post-Tweet CSS -->
+  <link rel="stylesheet" href="/styles/post-tweet.css" type="text/css" />
 
   <!-- External JS -->
   <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -43,28 +47,15 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-      <section class="new-tweet">
-          <h2>Compose Tweet</h2>
-          <form method="POST" action="/tweets/">
-            <textarea name="text" placeholder="What are you humming about?"></textarea>
-            <input type="submit" value="Tweet">
-            <span class="counter">140</span>
-          </form>
-        </section>
-    <div class="tweetContainer">
-      <article class="tweet">
-        <header>
-          <img src="https://www.agentpipeline.com/wp-content/uploads/2015/10/Man-Avatar.png">
-          <h1 class="name">Bill Fields</h1> 
-          <h4 class="handle">@MrFields</h4> 
-        </header>
-        <div class="text">
-          Little tweet here
-        </div>
-        <footer>
-          10 days ago
-        </footer>
-      </article>
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form method="POST" action="/tweets/">
+        <textarea name="text" placeholder="What are you humming about?"></textarea>
+        <input type="submit" value="Tweet">
+        <span class="counter">140</span>
+      </form>
+    </section>
+    <div id="tweet-container">
     </div>
   </main>
 

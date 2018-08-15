@@ -23,6 +23,11 @@ main section form textarea {
     padding: 1% 2%;
 }
 
+#tweet-container {
+    background-color: white;
+    padding-bottom: 10px;
+}
+
 /* <main class="container">
 <section class="new-tweet">
   <h2>Compose Tweet</h2>
