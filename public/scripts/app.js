@@ -82,6 +82,13 @@ $(function () {
       })
     }
   })
+
+  $('button#compose').on('click', function(e){
+    e.preventDefault();
+    console.log('okay');
+  })
+
+
 });
 
 

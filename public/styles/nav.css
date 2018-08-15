@@ -22,3 +22,18 @@
     line-height: 2.5em;
     margin-left: 10px;
 }
+
+#nav-bar button#compose {
+    float: right;
+    width: 100px;
+    height: 60px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#compose:hover {
+    color: green;
+}
