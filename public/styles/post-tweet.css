@@ -1,0 +1,41 @@
+article.tweet {
+    margin: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: Gainsboro;
+    overflow: hidden;
+}
+
+article.tweet header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+article.tweet header img {
+    height: 15%;
+    width: 15%;
+}
+
+article.tweet header h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+article.tweet header h4{
+    justify-content: flex-end;
+    font-weight: normal;
+}
+
+article.tweet div.text {
+    padding: 10% 5%;
+}
+
+article.tweet footer {
+    padding: 2%;
+    border-top: 1px solid;
+    border-color: gainsboro;
+}

@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $(".new-tweet form textarea").keyup(function () {
+    
     let count = $(this).siblings(".counter");
     let remainingText = 140 - this.textLength;
 
