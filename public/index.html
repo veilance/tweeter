@@ -57,7 +57,8 @@
       <!-- Create a New Tweet Here -->
       <h2>Compose Tweet</h2>
       <form id="render-tweet" method="POST" action="/tweets/">
-        <textarea name="text" placeholder="What are you humming about?"></textarea>
+        <textarea required name="text" placeholder="What are you humming about?" ></textarea>
+        <p id="char-error">Reached limit of 140 characters</p>
         <input type="submit" value="Tweet">
         <span class="counter">140</span>
       </form>
