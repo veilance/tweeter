@@ -4,6 +4,11 @@ Tweeter is a simple, single-page Twitter clone.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
 
+## Screenshots
+
+!["Screenshot of tweet compose box with highlighted text"](https://github.com/veilance/tweeter/blob/master/docs/click.png?raw=true)
+!["Screenshot of tweet page without tweet compose box after clicking compose button](https://github.com/veilance/tweeter/blob/master/docs/indexWithoutHeader.png?raw=true)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
