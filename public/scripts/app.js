@@ -2,7 +2,6 @@
 
 $(function () {
 
-  // Object -> Element containing HTML
   function createTweetElement(tweetObject) {
     let $tweety = $("<article>").addClass("tweet");
 
@@ -15,8 +14,6 @@ $(function () {
     let $body = $("<div>").addClass("text");
     let $para = $("<p>").text(`${tweetObject['content']['text']}`);
     $body.append($para);
-    // $body.append($(`<p>${tweetObject['content']['text']}</p>`));
-
 
     let $footer = $("<footer>");
     let $p = $(`<p>${tweetObject['created_at']}<p>`),
@@ -33,9 +30,6 @@ $(function () {
   }
 
   function renderTweets(tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
     for (let i in tweets) {
       $('#tweet-container').prepend(createTweetElement(tweets[i]));
     }
@@ -67,7 +61,6 @@ $(function () {
         $('form#render-tweet span.counter').text('140');
       });
     }
-
   });
 
   loadTweets();
