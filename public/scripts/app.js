@@ -15,6 +15,8 @@ $(function () {
     let $body = $("<div>").addClass("text");
     let $para = $("<p>").text(`${tweetObject['content']['text']}`);
     $body.append($para);
+    // $body.append($(`<p>${tweetObject['content']['text']}</p>`));
+
 
     let $footer = $("<footer>");
     let $p = $(`<p>${tweetObject['created_at']}<p>`),
@@ -35,7 +37,7 @@ $(function () {
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
     for (let i in tweets) {
-      $('#tweet-container').append(createTweetElement(tweets[i]));
+      $('#tweet-container').prepend(createTweetElement(tweets[i]));
     }
     return $('#tweet-container');
   }
@@ -46,30 +48,15 @@ $(function () {
     })
   }
 
-  loadTweets();
-
-  // refactor later for a function to take in the parameters 
-  $('article.tweet').hover(
-    function () {
-      $(this).css('border-color', 'black');
-      $(this).children('header').css('background', 'lightgrey');
-      $(this).find('div.icons').css('display', 'inline');
-    }, function () {
-      $(this).css('border-color', 'gainsboro');
-      $(this).children('header').css('background', '#F0F0F0');
-      $(this).find('div.icons').css('display', 'none');
-    });
-
-
   $('form#render-tweet').on('submit', function (e) {
     e.preventDefault();
     let data = $(this).serialize();
     let charError = $('#char-error');
-    if(charError.is(':visible')){
+    if (charError.is(':visible')) {
       charError.slideToggle("fast");
     }
 
-    if((data.length - 5) > 140){
+    if ((data.length - 5) > 140) {
       charError.slideToggle("fast");
       return;
     } else {
@@ -78,17 +65,12 @@ $(function () {
         loadTweets();
         $('form#render-tweet textarea').val('');
         $('form#render-tweet span.counter').text('140');
-      })
+      });
     }
 
-  })
+  });
 
-  $('button#compose').on('click', function (e) {
-    e.preventDefault();
-    $("section.new-tweet").slideDown("fast");
-    $("section.new-tweet form textarea").focus();
-  })
-
+  loadTweets();
 
 });
 
