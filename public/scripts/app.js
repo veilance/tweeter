@@ -3,6 +3,10 @@
 $(function () {
 
   function createTweetElement(tweetObject) {
+
+    let d = new Date().getTime();
+    let date = Math.round((d - tweetObject['created_at'])/ 86400000);
+
     let $tweety = $("<article>").addClass("tweet");
 
     let $img = $(`<img src=${tweetObject['user']['avatars']['small']}>`),
@@ -16,7 +20,7 @@ $(function () {
     $body.append($para);
 
     let $footer = $("<footer>");
-    let $p = $(`<p>${tweetObject['created_at']}<p>`),
+    let $p = $(`<p>Created ${date} days ago<p>`),
       icons = $(`<div class="icons"><i class="fas fa-flag"></i>
     <i class="fas fa-retweet"></i>
     <i class="fas fa-heart"></i></div>`);

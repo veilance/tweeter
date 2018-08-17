@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  font-size: 16px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -24,16 +25,36 @@ body {
 }
 
 main {
-  width: 450px;
   height: 100%;
   background-color: white;
+  padding-top: 8.75em;
   margin: 0 auto;
-  padding-top: 140px;
 }
 
+ @media all and (min-width: 1024px) { 
+   main {
+     width: 50%;
+   }
+
+ }
+ 
+ @media all and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    width: 75%;
+  }
+}
+  
+ @media all and (max-width: 767px) { 
+   main {
+     width: 100%;
+   }
+
+  html {
+    font-size: 9px;
+  }
+
+ }
 
 
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+

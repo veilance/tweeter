@@ -7,12 +7,12 @@
     color: #e8fdff;
     padding-left: 2em;
     padding-right: 2em;
-    height: 80px;
+    height: 5em;
 }
 
 #nav-bar .logo {
-    height: 80px;
-    width: 80px;
+    height: 5em;
+    width: 5em;
     float: left;
 }
 
@@ -20,18 +20,18 @@
     float: left;
     font-size: 2em;
     line-height: 2.5em;
-    margin-left: 10px;
+    margin-left: 1em;
 }
 
 #nav-bar button#compose {
     float: right;
-    width: 100px;
-    height: 60px;
-    margin: 10px 0;
-    border-radius: 5px;
+    width: 6.25em;
+    height: 3.75em;
+    margin: 0.625em 0;
+    border-radius: 0.3125em;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #compose:hover {

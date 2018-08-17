@@ -1,17 +1,17 @@
 main section.new-tweet {
-    border: 1px;
+    border: 0.0625em;
     border: solid;
     margin: 0 2em;
     padding: 0 2% 2%;
-    border-radius: 10px;
-    border-width: 1px;
+    border-radius: 0.625em;
+    border-width: 0.0625em;
     background-color: lightgrey;
 }
 
 main section h2 {
     text-align: left;
     border-bottom: solid;
-    border-width: 1px;
+    border-width: 0.0625em;
 }
 
 main section form span.counter {
@@ -25,7 +25,7 @@ main section form textarea {
 
 #tweet-container {
     background-color: white;
-    padding-bottom: 10px;
+    padding-bottom: 0.625em;
 }
 
 #char-error {
