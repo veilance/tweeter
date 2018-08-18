@@ -2,10 +2,17 @@
 
 $(function () {
 
-  function createTweetElement(tweetObject) {
-
+  // helper function to get the date
+  function getDate(tweetObject) {
     let d = new Date().getTime();
     let date = Math.round((d - tweetObject['created_at'])/ 86400000);
+    return date;
+  }
+
+  // Creates Tweet Element taking in information from the tweet generator 
+  function createTweetElement(tweetObject) {
+
+    let date = getDate(tweetObject);
 
     let $tweety = $("<article>").addClass("tweet");
 
@@ -33,6 +40,7 @@ $(function () {
     return $tweety;
   }
 
+  // Renders the tweets descending order 
   function renderTweets(tweets) {
     for (let i in tweets) {
       $('#tweet-container').prepend(createTweetElement(tweets[i]));
@@ -40,12 +48,14 @@ $(function () {
     return $('#tweet-container');
   }
 
+  // Gets the tweets from the /tweets and sends it to the renderTweets function 
   function loadTweets() {
     $.get('/tweets').done(function (tweets) {
       renderTweets(tweets);
     })
   }
 
+  // On user submit - checks the for form submission errors and then renders with an ajax call to post tweets 
   $('form#render-tweet').on('submit', function (e) {
     e.preventDefault();
     let data = $(this).serialize();

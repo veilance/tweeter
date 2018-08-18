@@ -6,7 +6,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
-  font-size: 16px;
+  font-size: 8px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -31,16 +31,32 @@ main {
   margin: 0 auto;
 }
 
- @media all and (min-width: 1024px) { 
-   main {
-     width: 50%;
-   }
+@media all and (min-width: 1440px) {
+  main {
+    width: 30%;
+  }
 
+  html {
+    font-size: 13px;
+  }
+}
+
+ @media all and (min-width: 1024px) and (max-width: 1439px) { 
+  main {
+     width: 40%;
+  }
+  html {
+     font-size: 11px;
+  }
  }
  
- @media all and (min-width: 768px) and (max-width: 1024px) {
+ @media all and (min-width: 768px) and (max-width: 1023px) {
   main {
-    width: 75%;
+    width: 50%;
+  }
+
+  html {
+    font-size: 10px;
   }
 }
   
@@ -48,11 +64,6 @@ main {
    main {
      width: 100%;
    }
-
-  html {
-    font-size: 9px;
-  }
-
  }
 
 
