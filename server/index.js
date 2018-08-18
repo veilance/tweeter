@@ -22,8 +22,7 @@ MongoClient.connect(MONGODB_URI, (err, db) => {
   const tweetsRoutes = require("./routes/tweets")(DataHelpers);
   app.use("/tweets", tweetsRoutes);
 
-  // app.listen(process.env.PORT || 5000);
-  app.listen(process.env.MONGODB_URI || 5000);
+  app.listen(process.env.PORT || 5000);
 });
 
 app.listen(PORT, () => {
