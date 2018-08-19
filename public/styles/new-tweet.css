@@ -5,7 +5,7 @@ main section.new-tweet {
     padding: 0 2% 2%;
     border-radius: 0.625em;
     border-width: 0.0625em;
-    background-color: lightgrey;
+    background: rgb(205,252,255);
 }
 
 main section h2 {

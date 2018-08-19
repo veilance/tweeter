@@ -1,5 +1,4 @@
 $(function () {
-  console.log('hover');
   $('body').on('mouseenter', 'article.tweet', function () {
     $(this).css('border-color', 'black');
     $(this).children('header').css('background', 'lightgrey');

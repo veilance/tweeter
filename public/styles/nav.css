@@ -3,8 +3,8 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: #00a087;
-    color: #e8fdff;
+    background: rgb(100,246,255);
+    color: black;
     padding-left: 2em;
     padding-right: 2em;
     height: 5em;
@@ -24,10 +24,11 @@
 }
 
 #nav-bar button#compose {
+    font-size: 1.5em;
     float: right;
-    width: 6.25em;
-    height: 3.75em;
-    margin: 0.625em 0;
+    width: 6.5em;
+    height: 2.2em;
+    margin: 0.5em 0;
     border-radius: 0.3125em;
     display: flex;
     align-items: center;
@@ -35,5 +36,5 @@
 }
 
 #compose:hover {
-    color: green;
+    color: rgb(100, 185, 255);
 }
