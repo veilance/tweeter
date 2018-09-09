@@ -8,10 +8,9 @@ Back End: Node, Express and MongoDB
 
 Hosting: Heroku
 
-## Screenshots
+## Final Product
 
-!["Screenshot of tweet compose box with highlighted text"](https://github.com/veilance/tweeter/blob/master/docs/compose.png?raw=true)
-!["Screenshot of tweet page without tweet compose box after clicking compose button](https://github.com/veilance/tweeter/blob/master/docs/nocomposebox.png?raw=true)
+!["Tweeter UI"](https://github.com/veilance/tweeter/blob/master/docs/tweeter.gif?raw=true)
 
 ## Getting Started
 
